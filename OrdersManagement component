@@ -1,0 +1,14 @@
+// OrdersManagement.js
+
+import React from 'react';
+
+function OrdersManagement() {
+  return (
+    <div>
+      <h2>Orders Management</h2>
+      {/* Order listing and management functionalities */}
+    </div>
+  );
+}
+
+export default OrdersManagement;
