@@ -1,0 +1,43 @@
+
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import Dashboard from './Dashboard';
+import ProductsManagement from './ProductsManagement';
+import OrdersManagement from './OrdersManagement';
+
+function App() {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Dashboard</Link>
+            </li>
+            <li>
+              <Link to="/products">Products Management</Link>
+            </li>
+            <li>
+              <Link to="/orders">Orders Management</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Switch>
+          <Route path="/products">
+            <ProductsManagement />
+          </Route>
+          <Route path="/orders">
+            <OrdersManagement />
+          </Route>
+          <Route path="/">
+            <Dashboard />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
