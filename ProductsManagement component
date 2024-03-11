@@ -1,0 +1,14 @@
+// ProductsManagement.js
+
+import React from 'react';
+
+function ProductsManagement() {
+  return (
+    <div>
+      <h2>Products Management</h2>
+      {/* Product listing and management functionalities */}
+    </div>
+  );
+}
+
+export default ProductsManagement;
